@@ -1,0 +1,28 @@
+# Workflow [No indentaion required for naming the workflow]
+# Should Have Name
+name: Hello
+
+# On Tells when the workflow should run (Give indentation via Tab key)
+on:
+  workflow_dispatch: 
+
+# job tells what the workflow should do, there can be one or more jobs, hence we write jobs
+# jobs is an object so needs indentation
+
+# Jobs
+# Should be inside the workflow
+
+jobs:
+  # Ist job (give indentation)
+  say-hello:
+    # Creates an Ephemeral Container with Ubuntu running
+    runs-on: ubuntu-latest
+    # That ephemeral container will have steps to execute, hence name those steps and use run: run has the cpmmand
+    steps:
+      - name: Say hello to everyone
+        run: echo "Hello Dosto"
+# Steps
+# Should be inside the job
+
+# Actions
+# Should be inside the steps
